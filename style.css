@@ -1,0 +1,93 @@
+:root {
+    --primary: #0ea5e9;
+    --primary-dark: #0369a1;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.calc-card {
+    background: var(--card);
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+h1 { margin: 0; color: var(--primary); text-align: center; font-weight: 800; }
+.subtitle { color: var(--muted); text-align: center; margin-bottom: 2rem; font-size: 0.9rem; }
+
+.section-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+    margin: 1.5rem 0 0.5rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 2fr 80px 100px;
+    align-items: center;
+    padding: 8px 0;
+    gap: 12px;
+}
+
+.highlight { background-color: #f0f9ff; border-radius: 8px; padding: 8px; margin-left: -8px; margin-right: -8px; }
+
+.course-name { font-weight: 500; font-size: 0.95rem; }
+.credit-badge { background: #e0f2fe; color: #0369a1; font-size: 0.7rem; padding: 4px 6px; border-radius: 6px; text-align: center; font-weight: bold; }
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-calculate {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.2s;
+}
+
+.btn-calculate:hover { background: var(--primary-dark); }
+
+#result-display {
+    margin-top: 2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.result-main { background: #f0fdf4; padding: 20px; text-align: center; }
+.result-stats { display: flex; justify-content: space-around; padding: 15px; background: #f8fafc; border-top: 1px solid #e2e8f0; }
+.stat-item { display: flex; flex-direction: column; align-items: center; }
+.stat-item span { font-size: 0.7rem; font-weight: bold; color: var(--muted); }
+#final-gpa { font-size: 3.5rem; margin: 5px 0; color: #16a34a; font-weight: 900; }
+
+.hidden { display: none; }

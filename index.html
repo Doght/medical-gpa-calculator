@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedGrade | GPA & Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc-card">
+    <header>
+        <h1>MedGrade</h1>
+        <p class="subtitle">56-Credit Medical Curriculum</p>
+    </header>
+
+    <div class="section-header">Committees</div>
+    <div class="input-group" data-cr="5"><span class="course-name">1st Committee</span><span class="credit-badge">5 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+    <div class="input-group" data-cr="5"><span class="course-name">2nd Committee</span><span class="credit-badge">5 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+    <div class="input-group" data-cr="7"><span class="course-name">3rd Committee</span><span class="credit-badge">7 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+    <div class="input-group" data-cr="9"><span class="course-name">4th Committee</span><span class="credit-badge">9 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+    <div class="input-group" data-cr="6"><span class="course-name">5th Committee</span><span class="credit-badge">6 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+
+    <div class="section-header">SOM & Research</div>
+    <div class="input-group highlight" data-cr="8"><span class="course-name">SOM</span><span class="credit-badge">8 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+    <div class="input-group" data-cr="2"><span class="course-name">Medical Research</span><span class="credit-badge">2 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+    <div class="input-group" data-cr="4"><span class="course-name">Biology Elective</span><span class="credit-badge">4 Cr</span><input type="number" class="score" placeholder="0-100"></div>
+
+    <div class="section-header">Languages & Planning</div>
+    <div class="input-group" data-cr="2"><span class="course-name">German I</span><span class="credit-badge">2 Cr</span><input type="number" class="score"></div>
+    <div class="input-group" data-cr="2"><span class="course-name">German II</span><span class="credit-badge">2 Cr</span><input type="number" class="score"></div>
+    <div class="input-group" data-cr="2"><span class="course-name">Turkish I</span><span class="credit-badge">2 Cr</span><input type="number" class="score"></div>
+    <div class="input-group" data-cr="2"><span class="course-name">Turkish II</span><span class="credit-badge">2 Cr</span><input type="number" class="score"></div>
+    <div class="input-group" data-cr="2"><span class="course-name">Career Planning</span><span class="credit-badge">2 Cr</span><input type="number" class="score"></div>
+
+    <button class="btn-calculate" onclick="calculateGPA()">Calculate Results</button>
+
+    <div id="result-display" class="hidden">
+        <div class="result-main">
+            <p>GPA (4.0 Scale)</p>
+            <h2 id="final-gpa">0.00</h2>
+        </div>
+        <div class="result-stats">
+            <div class="stat-item">
+                <span>Weight (100%)</span>
+                <strong id="final-weight">0.00</strong>
+            </div>
+            <div class="stat-item">
+                <span>Credits</span>
+                <strong id="cr-sum">0</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
